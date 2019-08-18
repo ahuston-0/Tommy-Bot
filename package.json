@@ -6,9 +6,11 @@
   "author": "Alice Huston",
   "license": "GPL",
   "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "^11.5.1",
+    "node": "^12.8.1"
   },
   "devDependencies": {
+    "simple-git": "^1.124.0",
     "winston": "^3.2.1"
   }
 }
