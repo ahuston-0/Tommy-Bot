@@ -1,0 +1,14 @@
+{
+  "name": "tommy-bot",
+  "version": "1.0.0",
+  "description": "The bot that manages the Minecraft server",
+  "main": "bot.js",
+  "author": "Alice Huston",
+  "license": "GPL",
+  "dependencies": {
+    "discord.io": "github:woor/discord.io#gateway_v6"
+  },
+  "devDependencies": {
+    "winston": "^3.2.1"
+  }
+}
