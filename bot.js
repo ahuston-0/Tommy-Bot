@@ -1,7 +1,7 @@
-const Discord = require('discord.io');
+const Discord = require('discord.js');
 const logger = require('winston');
 const auth = require('./auth.json');
-let command_var = '!'
+let command_var = '!';
 
 //Configure logger
 logger.remove(logger.transports.Console);
@@ -11,42 +11,45 @@ logger.add(new logger.transports.Console, {
 logger.level = 'debug';
 
 //Initialize bot
-const bot = new Discord.Client({
-    token: auth.token,
-    autorun: true
+const bot = new Discord.Client();
+const bot_return = bot.login(auth.token);
+bot.once('ready', () => {
+    logger.info(bot_return.toString());
+    logger.info('Connected!');
 });
-bot.on('ready', function(evt){
-    logger.info('Connected');
-    logger.info('Logged in as: ');
-    logger.info(bot.username + '-(' + bot.id + ')');
-});
-bot.on('message', function(user, userID, channelID, message, evt){
+
+
+
+bot.on('message', (message)=>{
     //The bot will only execute commands if the message starts with the command var
     //The current default is '!'
-    if (message.substring(0,1) === command_var){
-        let args = message.substring(1).split(" ");
+    if (message.content.substring(0,1) === command_var){
+        let args = message.content.substring(1).split(" ");
         const cmd = args[0];
 
         args = args.splice(1);
         logger.info(args);
         switch (cmd){
             case 'ping':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Pong!'
-                });
+                message.channel.send('pong')
                 break;
             case 'update':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Shutting down to update'
-                });
+                message.channel.send('Shutting down to update')
                 break;
             case 'srccode':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Find my source code here! '
-                })
+                message.channel.send('Find my source code here! https://github.com/ahuston-0/Tommy-Bot')
+                break;
+            case 'help':
+                message.channel.send("Command List\n" +
+                    "To execute commands, call the bot with " + command_var + "< command >\n\n" +
+                    "Fully Functional\n" +
+                    "help, ping, srccode\n\n" +
+                    "WIP\n"+
+                    "update")
+                break;
+            case 'kill':
+                message.channel.send('Agh you got me! Goodbye.');
+                return process.exit(1);
             default:
                 break;
         }
