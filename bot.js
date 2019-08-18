@@ -36,7 +36,7 @@ bot.on('message', (message)=>{
                 break;
             case 'update':
                 message.channel.send('Shutting down to update');
-                s_git.pull("origin/master", "master");
+                s_git().pull("origin","master", {'--rebase':true});
                 break;
             case 'srccode':
                 message.channel.send('Find my source code here! https://github.com/ahuston-0/Tommy-Bot')
