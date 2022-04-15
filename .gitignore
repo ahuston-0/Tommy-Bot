@@ -1,6 +1,5 @@
 auth.json
 node_modules/
-dist/
 .log/
 
 # yarn 2 zero install
