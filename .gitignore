@@ -1,4 +1,13 @@
 auth.json
 node_modules/
-package-lock.json
-yarn.lock
+dist/
+.log/
+
+# yarn 2 zero install
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
