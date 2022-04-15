@@ -1,5 +1,5 @@
 import { Client, Intents } from 'discord.js';
-import { token } from './auth.json';
+import 'dotenv/config';
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -7,4 +7,5 @@ client.once('ready', () => {
     console.log('TommyBot is ready!');
 })
 
-client.login(token);
+console.log(process.env.token);
+client.login(process.env.token);
