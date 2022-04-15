@@ -15,13 +15,8 @@
     "postpack": "pinst --enable"
   },
   "lint-staged": {
-    "*.js": [
+    "*.(js|ts)": [
       "yarn eslint",
-      "yarn prettier --write"
-    ],
-    "*.ts": [
-      "yarn eslint",
-      "yarn tsc --noEmit",
       "yarn prettier --write"
     ],
     "*": "yarn prettier --write"
