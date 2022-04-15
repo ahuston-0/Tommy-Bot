@@ -16,10 +16,11 @@
   },
   "lint-staged": {
     "*.(js|ts)": [
-      "eslint",
-      "prettier --write"
+      "yarn eslint",
+      "yarn prettier --write"
     ],
-    "*": "prettier --write"
+    "*.(ts)": "yarn tsc",
+    "*": "yarn prettier --write"
   },
   "dependencies": {
     "discord.js": "^13.6.0",

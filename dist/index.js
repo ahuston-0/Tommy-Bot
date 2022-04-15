@@ -6,5 +6,5 @@ const client = new discord_js_1.Client({ intents: [discord_js_1.Intents.FLAGS.GU
 client.once('ready', () => {
     console.log('TommyBot is ready!');
 });
-client.login(process.env.token);
+void client.login(process.env.token);
 //# sourceMappingURL=index.js.map
