@@ -1,6 +1,7 @@
 auth.json
 node_modules/
 .log/
+.env
 
 # yarn 2 zero install
 .yarn/*
