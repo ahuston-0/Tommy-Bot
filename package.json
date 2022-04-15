@@ -6,7 +6,7 @@
   "author": "Alice Huston",
   "license": "GPL-3.0-or-later",
   "scripts": {
-    "prestart": "yarn tsc",
+    "compile": "yarn tsc",
     "start": "yarn node ."
   },
   "dependencies": {
