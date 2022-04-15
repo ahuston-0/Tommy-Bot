@@ -55,17 +55,17 @@ bot.on('message', (message) => {
       case 'help':
         message.channel.send(
           '**Command List**\n' +
-          'To execute commands, call the bot with ' +
-          command_var +
-          'command\n\n' +
-          '**All Users**\n' +
-          'Help - This list of commands\n' +
-          'Ping - A little game the dev and I use to test\n' +
-          'SrcCode - A link to my source code!\n\n' +
-          '**Admins**\n' +
-          `Cmd_Var - Change the command prefix from ${command_var}\n` +
-          'Reboot - Soft reboot me\n' +
-          'Update - Pull the latest version of me from GitHub'
+            'To execute commands, call the bot with ' +
+            command_var +
+            'command\n\n' +
+            '**All Users**\n' +
+            'Help - This list of commands\n' +
+            'Ping - A little game the dev and I use to test\n' +
+            'SrcCode - A link to my source code!\n\n' +
+            '**Admins**\n' +
+            `Cmd_Var - Change the command prefix from ${command_var}\n` +
+            'Reboot - Soft reboot me\n' +
+            'Update - Pull the latest version of me from GitHub'
         );
         break;
       case 'reboot':
