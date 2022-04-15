@@ -7,5 +7,4 @@ client.once('ready', () => {
     console.log('TommyBot is ready!');
 })
 
-console.log(process.env.token);
 client.login(process.env.token);
