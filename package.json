@@ -10,7 +10,7 @@
     "lint": "yarn eslint --ext .js,.ts .",
     "compile": "yarn tsc",
     "start": "yarn node .",
-    "postinstall": "husky install",
+    "postinstall": "yarn husky install",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
   },
