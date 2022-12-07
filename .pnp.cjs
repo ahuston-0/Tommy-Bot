@@ -49,7 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:12.3.7"],\
             ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.6.2"],\
-            ["simple-git", "npm:3.6.0"],\
+            ["simple-git", "npm:3.15.1"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"],\
             ["winston", "npm:3.7.2"]\
           ],\
@@ -3326,10 +3326,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["simple-git", [\
-        ["npm:3.6.0", {\
-          "packageLocation": "./.yarn/cache/simple-git-npm-3.6.0-98db079aa3-a6bd4eaefe.zip/node_modules/simple-git/",\
+        ["npm:3.15.1", {\
+          "packageLocation": "./.yarn/cache/simple-git-npm-3.15.1-306dee1a1b-2b97c3ba3c.zip/node_modules/simple-git/",\
           "packageDependencies": [\
-            ["simple-git", "npm:3.6.0"],\
+            ["simple-git", "npm:3.15.1"],\
             ["@kwsites/file-exists", "npm:1.1.1"],\
             ["@kwsites/promise-deferred", "npm:1.1.1"],\
             ["debug", "virtual:62738e6f4a1bb4f8ff35ae41a77cb589aeffb1a2b896f237bc331b5509d0b413c328994ab1431dc8c128ffa7d6ca83d167ebf621c5c6b08297150420be31ce8e#npm:4.3.4"]\
@@ -3644,7 +3644,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:12.3.7"],\
             ["pinst", "npm:3.0.0"],\
             ["prettier", "npm:2.6.2"],\
-            ["simple-git", "npm:3.6.0"],\
+            ["simple-git", "npm:3.15.1"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"],\
             ["winston", "npm:3.7.2"]\
           ],\
