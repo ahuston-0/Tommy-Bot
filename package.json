@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@tsconfig/node18": "^18.2.0",
-    "discord.js": "^13.6.0",
+    "discord.js": "^13.16.0",
     "dotenv": "^16.0.0"
   },
   "devDependencies": {
