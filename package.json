@@ -22,7 +22,7 @@
     "*": "yarn prettier --write"
   },
   "dependencies": {
-    "@tsconfig/node18": "^18.2.2",
+    "@tsconfig/node18": "^18.2.4",
     "discord.js": "^13.17.1",
     "dotenv": "^16.4.2"
   },
